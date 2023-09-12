@@ -11,7 +11,7 @@ Here's some notes about my submission:
 
 1. A link to the project repository   https://github.com/olatunde1998/SchoolinkaTodo-App
 
-2. A publicly live hosted URL of the challenge  https://scholinkatodo.vercel.app/
+2. A publicly live hosted URL of the challenge  https://schoolinkatodo.vercel.app/
 
 Thank you very much.
 
@@ -25,6 +25,8 @@ Rasheed Olatunde
  + [Vercel](https://vercel.com/dashboard) 
  + [Github Actions](https://docs.github.com/en/actions/)
  + [TailwindCss](https://tailwindcss.com/) 
+ + [React Tanstack Query](https://tanstack.com/) 
+
 
 
 

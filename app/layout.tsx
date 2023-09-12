@@ -1,10 +1,11 @@
-"use client"
+"use client";
 import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { Navbar } from "@/components/Navbar";
 
 const queryClient = new QueryClient();
 const worksans = Work_Sans({ subsets: ["latin"] });
@@ -25,9 +26,16 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <QueryClientProvider client={queryClient}>
-        <body className={worksans.className}>{children}</body>
+        <body className={worksans.className}>
+          <div className="h-full relative ">
+            <Navbar />
+            <main className="md:px-16 px-6">
+              <div className="max-w-6xl mx-auto">{children}</div>
+            </main>
+          </div>
+        </body>
         <Toaster />
-        <ReactQueryDevtools initialIsOpen={false} />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
       </QueryClientProvider>
     </html>
   );
